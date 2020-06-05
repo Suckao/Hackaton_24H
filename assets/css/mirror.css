@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+.bodymirror,
+html {
+    height: 100%;
+    background-image: url("https://i.postimg.cc/fWqW1FcK/mirror-mirror-on-the-wall-2.jpg");
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 200%;
+    color: white;
+    padding-top: 37%;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.typewriter article {
+    padding: 20px;
+    font-size: 18px;
+    font-family: 'Press Start 2P', cursive;
+    background-color: black;
+    border-radius: 5px;
+    border: 2px solid azure;
+    text-align: center;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    color: azure;
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation: typing 1.5s steps(50, end), blink-caret 1.0s step-end infinite;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.mirror-button-yes {
+    color: azure;
+    text-decoration: none;
+}
+
+.mirror-button-no {
+    color: azure;
+    text-decoration: none;
+}
+
+.mirror-button-yes:hover {
+    color: green;
+    transition: 1.0s;
+}
+
+.mirror-button-no:hover {
+    color: red;
+    transition: 1.0s;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 50%
+    }
+}
+
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: azure;
+    }
+}

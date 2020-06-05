@@ -1,0 +1,262 @@
+/* AMITYVILLE PLANET */
+
+body, html {
+    height: 100%;
+}
+
+.background {
+    background-image: url("https://i.postimg.cc/0Nt5TjDQ/av.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: black;
+    width: 100%;
+    opacity: 30%;
+}
+
+.av_title{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-family: 'Creepster', cursive;
+    display : flex;
+    justify-content: center;
+    color:darkred;
+    font-size: 7em;
+    opacity: 70%;
+}
+.typewriter p {
+    width: 50%;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    padding: 20px;
+    font-size: 18px;
+    font-family: 'Press Start 2P',cursive;
+    background-color: black;
+    border-radius: 5px;
+    border: 2px solid azure;
+    text-align: center;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    color: azure;
+    white-space: pre-line;/* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation:
+            typing 1.5s steps(50, end),
+            blink-caret 1.0s step-end infinite;
+}
+.game-button-yes {
+    color: azure;
+    text-decoration: none;
+}
+.game-button-yes:hover {
+    color: green;
+    transition: 1.0s;
+}
+
+.game-button-no {
+    color: azure;
+    text-decoration: none;
+}
+.game-button-no:hover {
+    color: red;
+    transition: 1.0s;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 50% }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: azure; }
+}
+
+/* AMITYVILLE GAME */
+
+/*
+  A tiny game
+*/
+
+#scoreboard {
+    position:absolute;
+    right:0;
+    top:0;
+    padding:2vw;
+    background: rgba(0,0,0, 0.5);
+    color: rgba(255,255,255,1);
+    width:20vw;
+    text-align:center;
+    font-size:2em
+}
+
+#header {
+    position:absolute;
+    left:0;
+    top:0;
+    padding:2vw;
+    background: rgba(0,0,0, 0.5);
+    color: rgba(255,255,255,1);
+    width:40vw;
+    text-align:center;
+    font-size:1.3em;
+}
+
+#winner {
+    width:98vw;
+    background: rgba(0, 0, 0, 0.8);
+    color:white;
+    position:absolute;
+    top:1vh;
+    left:1vw;
+    font-size:7em;
+    text-align:center;
+    display:none;
+    vertical-align:middle;
+    padding-top:5vh;
+    padding-bottom:16vh;
+    z-index:100;
+}
+
+#winner a
+{
+    font-size:3vw;
+}
+
+.bounced {
+    border: rgba(255, 255, 255, 0.9) solid 3px;
+    box-shadow: 0 0 13pt 2pt rgba(20, 20, 20, 0.3);
+    border-radius: 15px;
+    -webkit-filter: saturate(3);
+    filter: saturate(3);
+    -webkit-filter: hue-rotate(180deg);
+    filter: hue-rotate(180deg);
+}
+
+#main.scaled-bg {
+    background-image: url("https://i.postimg.cc/JhWvRwZk/av2.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#main.cropped-bg {
+    background: url('https://openclipart.org/download/216995/3d-perspective-grid-very-long.svg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    width: 100wv;
+}
+
+#item-coffin {
+    position: absolute;
+    width: 5%;
+    height: 20%;
+    top: 29vw;
+    left: 85%;
+}
+
+#item-2-bieber {
+    position: absolute;
+    width: 4%;
+    top: 22vw;
+    left: 8%;
+}
+
+#item-3-knife {
+    position: absolute;
+    width: 5%;
+    top: 35vw;
+    left: 18%;
+}
+
+#item-4-gun {
+    position: absolute;
+    width: 6%;
+    top: 17.8vw;
+    left: 33%;
+}
+#item-5-harpoon {
+    position: absolute;
+    width: 4%;
+    top: 35vw;
+    left: 2%;
+}
+#item-6-eyes {
+    position: absolute;
+    width: 3%;
+    top: 13vw;
+    left: 69%;
+}
+#item-7-hand {
+    position: absolute;
+    width: 2%;
+    top: 8vw;
+    left: 2%;
+}
+#item-8-cat {
+    position: absolute;
+    width: 5%;
+    top: 34vw;
+    left:86%;
+}
+#item-9-trump {
+    position: absolute;
+    width: 3%;
+    top: 40vw;
+    left: 36%;
+}
+#item-10-snake {
+    position: absolute;
+    width: 3%;
+    top: 5vw;
+    left: 53%;
+}
+
+.game_av_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: black;
+    width: 100%;
+    opacity: 40%;
+}
+
+
+/* Reset */
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    cursor: pointer;
+    font-family: "kinescope",sans-serif;
+
+}
+
+a,
+a:hover,
+a:active,
+a:link,
+a:visited
+{
+    color:white;
+    text-decoration:none;
+    background-color:rgba(30,30,30, 0.8);
+}

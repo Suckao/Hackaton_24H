@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+}
+
+.asile_body {
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/psychiatric-hospital.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    /*opacity: 0.2;*/
+}
+
+.room1_body {
+    /*width: 90%;*/
+    height: 100%;
+    background-image: url("../images/psychiatric-hospital-room3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    /*opacity: 0.2;*/
+}
+
+.room2_body {
+    /*width: 90%;*/
+    height: 100%;
+    background-image: url("../images/psychiatric-hospital-room1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    /*opacity: 0.2;*/
+}
+
+.asile_h1 {
+    color: white;
+    text-align: center;
+}
+
+.room1_h2 {
+    color: black;
+    text-align: center;
+}
+
+.asile_conteneur {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.asile_transbox1, .asile_transbox2, .room1_transbox, room1_transbox2 {
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.5;
+    width: 100%;
+    margin: 30px auto 30px auto;
+}
+
+.asile_transbox1 {
+    display: flex;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.asile_transbox2 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.asile_transbox1 img {
+    height: 200px;
+    margin: auto;
+    padding-left: 5%;
+}
+
+.asile_transbox1 p {
+    display: block;
+    margin: 5%;
+    /*padding-bottom: 5%;*/
+}
+
+.asile_transbox1 p, .asile_transbox2 p, .room1_transbox p, .asile_transbox2 a {
+    margin: 5%;
+    font-weight: bold;
+    color: black;
+}
+
+.asile_transbox2 {
+    padding-bottom: 5%;
+}
+
+.room1_transbox {
+    padding-bottom: 170px;
+    padding-top: 170px;
+}
+
+.room1_transbox2 {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.room1_input {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.message {
+    font-size: 20px;
+}

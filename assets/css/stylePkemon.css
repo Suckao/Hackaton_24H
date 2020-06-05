@@ -1,0 +1,275 @@
+
+html #games {
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/1022/822/471/ivysaur-minimalism-green-background-ivysaur-game-boy-color-wallpaper-preview.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: monospace;
+    font-size: 20px;
+  }
+html #planet{
+    /*height: 100%;*/
+    background-image: url("https://data.whicdn.com/images/249321337/original.gif");
+    /* Full height */
+    /*height: 100%;
+    /* Center and scale the image nicely */
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  #game {
+    position: relative;
+    background-image: url('http://bit.ly/pokemonbg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: 3px solid black;
+    border-radius: 8px 8px 0 0;
+    height: 480px;
+    width: 800px;
+  }
+
+  #game-over{
+    font-family: 'Press Start 2P', cursive;
+    display: none;
+    background: black;
+    color: coral;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+  }
+
+  #winner{
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    background: black;
+    color: coral;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .opponent {
+    position: relative;
+    height: 300px;
+  }
+  
+  .opponent .stats {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    width: 320px;
+  }
+  
+  .opponent .pokemon {
+    position: absolute;
+    bottom: 0;
+    right: 140px;
+    width: 100px;
+  }
+  
+  .player {
+    position: relative;
+    height: 192px;
+  }
+  
+  .player .stats {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 320px;
+  }
+  
+  .player .pokemon {
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    width: 300px;
+  }
+  
+  #box {
+    padding: 8px;
+    background: #333;
+    border: 3px solid black;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    color: #fff;
+    height: 120px;
+    width: 784px;
+  }
+  
+  #box .message {
+    font-family: 'Press Start 2P', cursive;
+    position: relative;
+    float: left;
+    font-size: 15px;
+    width: 50%;
+  }
+  #box .continue {
+    position: absolute;
+    margin-top: 30px;
+    float: left;
+    width: 25%;
+    height: 100%;
+  }
+  #box .continue  button {
+    font-family: 'Press Start 2P', cursive;
+    position: relative;
+    float: left;
+    background: #666;
+    border: 3px solid #888;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 14px;
+    margin: 4px;
+    padding: 16px;
+    outline: none !important;
+  }
+  #box .continue button:hover {
+    background: #777;
+    border-color: #999;
+  }
+  
+  #box .continue button:active {
+    background: #555;
+    border-color: #666;
+  }
+  
+  #box .actions {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%;
+  }
+  
+  #box .actions button {
+    font-family: 'Press Start 2P', cursive;
+    position: relative;
+    float: left;
+    background: #666;
+    border: 3px solid #888;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 14px;
+    margin: 4px;
+    padding: 16px;
+    width: calc(50% - 8px);
+    height: calc(50% - 8px);
+    outline: none !important;
+  }
+  
+  #box .actions button:hover {
+    background: #777;
+    border-color: #999;
+  }
+  
+  #box .actions button:active {
+    background: #555;
+    border-color: #666;
+  }
+  .stats {
+    font-family: 'Press Start 2P', cursive;
+    background: #F0F0F0;
+    border: 2px solid black;
+    border-radius: 8px;
+    color: 	#282828;
+    padding: 12px;
+  }
+  
+  .stats .pokeballs {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding-bottom: 10px;
+  }
+  
+  .stats .pokeballs .pokeball {
+    position: relative;
+    float: left;
+    background-image: url('http://bit.ly/pokeballimg');
+    background-size: 100% 100%;
+    width: 25px;
+    height: 25px;
+  }
+  
+  .stats .hp-count:before {
+    content: 'HP: '
+  }
+  
+  .stats .hp-count {
+    float: right;
+    padding-top: 10px;
+  }
+  
+  
+  .stats .name {
+    font-weight: bold;
+  }
+  
+  .stats .level:before {
+    content: "LVL"
+  }
+
+  .button, .narration article {
+    font-family: 'Press Start 2P', cursive;
+    color: #fff;
+    background-color: black;
+    padding: 40px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 2px solid azure;
+    text-align: center;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid white;
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(50, end),
+      blink-caret 1.0s step-end infinite;
+    /*position:absolute;
+    bottom:0;
+    width: 95%;*/
+  }
+
+  
+  /* The typing effect */
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100%}
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white }
+  }
+  #btn1, #btn2{
+    border: none;
+    background-color: black;
+    font-family: 'Press Start 2P', cursive;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  #btn1:hover {
+    color: green;
+    transition: 1.0s;
+}
+  #btn2:hover {
+  color: red;
+  transition: 1.0s;
+}
+#btn{
+  color: red;
+}
+
+#btn:hover {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: -webkit-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet);
+}
+
